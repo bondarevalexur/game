@@ -9,7 +9,9 @@ const QuestionCard = () => {
 
   useEffect(() => {
     const textData = window.localStorage.getItem("data");
-    const data: Category[] = textData && JSON.parse(textData);
+    const round = window.localStorage.getItem("round") ?? 1;
+    const data: any = textData && JSON.parse(textData);
+    const dataRound: Category[] = data?.[round];
 
     const row = data?.find(({ name }) => name === answerData.category);
     const cellIndex = row?.values?.findIndex(
