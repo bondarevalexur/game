@@ -13,7 +13,7 @@ const QuestionCard = () => {
     const data: any = textData && JSON.parse(textData);
     const dataRound: Category[] = data?.[round];
 
-    const row = data?.find(({ name }) => name === answerData.category);
+    const row = dataRound?.find(({ name }) => name === answerData.category);
     const cellIndex = row?.values?.findIndex(
       ({ question }) => question === value.question,
     );
