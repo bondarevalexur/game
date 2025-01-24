@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "tailwindcss": ["node_modules/tailwindcss"]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}
